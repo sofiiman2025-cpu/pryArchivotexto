@@ -40,12 +40,13 @@ namespace pryArchivotexto
 
             StreamReader AD = new StreamReader(NombreArchivo); //abrir
 
-           Datoleido = AD.ReadToEnd(); // leer
-
+           Datoleido = AD.ReadLine(); // leer
+            lst.Items.Clear();
             while (Datoleido != null)
             {
                 lst.Items.Add(Datoleido);
-                Datoleido = AD.ReadToEnd();
+
+                Datoleido = AD.ReadLine();
             }
 
             AD.Close(); //cerrar

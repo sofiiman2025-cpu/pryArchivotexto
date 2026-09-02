@@ -77,7 +77,7 @@
             this.grpGrabar.Size = new System.Drawing.Size(321, 150);
             this.grpGrabar.TabIndex = 3;
             this.grpGrabar.TabStop = false;
-            this.grpGrabar.Text = ".";
+            this.grpGrabar.Text = "Grabar";
             // 
             // lstDatos
             // 
@@ -114,12 +114,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(345, 461);
+            this.ClientSize = new System.Drawing.Size(345, 439);
             this.Controls.Add(this.grpListado);
             this.Controls.Add(this.grpGrabar);
             this.Name = "frmGrabardatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Archivo de texto";
             this.Load += new System.EventHandler(this.frmGrabardatos_Load);
             this.grpGrabar.ResumeLayout(false);
             this.grpGrabar.PerformLayout();
