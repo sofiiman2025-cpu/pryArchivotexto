@@ -27,7 +27,8 @@ namespace pryArchivotexto
 
         private void btnGrabar_Click(object sender, EventArgs e)
         {
-            x.Grabar();
+            x.Grabar(txtGrabar.Text);
+            MessageBox.Show("Datos grabados correctamente.");
         }
     }
 }

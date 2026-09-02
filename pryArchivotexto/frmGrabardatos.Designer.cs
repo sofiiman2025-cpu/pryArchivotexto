@@ -63,6 +63,7 @@
             // 
             // grpGrabar
             // 
+            this.grpGrabar.BackColor = System.Drawing.Color.LavenderBlush;
             this.grpGrabar.Controls.Add(this.lblGrabar);
             this.grpGrabar.Controls.Add(this.btnGrabar);
             this.grpGrabar.Controls.Add(this.txtGrabar);
@@ -78,9 +79,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(304, 189);
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(294, 178);
             this.Controls.Add(this.grpGrabar);
             this.Name = "frmGrabardatos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmGrabardatos_Load);
             this.grpGrabar.ResumeLayout(false);

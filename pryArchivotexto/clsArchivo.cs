@@ -9,15 +9,29 @@ namespace pryArchivotexto
 {
     internal class clsArchivo
     {
+
+        public string NombreArchivo = "Palabras.txt";
+
         public void Grabar()
         {
-            StreamWriter AD = new StreamWriter("Palabras.txt"); //abrir
+            StreamWriter AD = new StreamWriter(NombreArchivo, true); //abrir
+
             AD.WriteLine("Hola"); //grabar
             AD.WriteLine("¿Cómo estás?");
+
             AD.Close(); //cerrar
             AD.Dispose();
         }
 
+        public void Grabar(string valor)
+        {
+            StreamWriter AD = new StreamWriter(NombreArchivo, true); //abrir
+
+            AD.WriteLine(valor); //grabar
+
+            AD.Close(); //cerrar
+            AD.Dispose();
+        }
 
     }
 }
