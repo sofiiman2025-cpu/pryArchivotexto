@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryArchivotexto
 {
@@ -33,5 +34,22 @@ namespace pryArchivotexto
             AD.Dispose();
         }
 
+        public void Listar(ListBox lst)
+        {
+            string Datoleido = "";
+
+            StreamReader AD = new StreamReader(NombreArchivo); //abrir
+
+           Datoleido = AD.ReadToEnd(); // leer
+
+            while (Datoleido != null)
+            {
+                lst.Items.Add(Datoleido);
+                Datoleido = AD.ReadToEnd();
+            }
+
+            AD.Close(); //cerrar
+            AD.Dispose();
+        }
     }
 }

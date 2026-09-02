@@ -32,7 +32,11 @@
             this.lblGrabar = new System.Windows.Forms.Label();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.grpGrabar = new System.Windows.Forms.GroupBox();
+            this.lstDatos = new System.Windows.Forms.ListBox();
+            this.grpListado = new System.Windows.Forms.GroupBox();
+            this.btnListar = new System.Windows.Forms.Button();
             this.grpGrabar.SuspendLayout();
+            this.grpListado.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtGrabar
@@ -70,17 +74,48 @@
             this.grpGrabar.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpGrabar.Location = new System.Drawing.Point(12, 12);
             this.grpGrabar.Name = "grpGrabar";
-            this.grpGrabar.Size = new System.Drawing.Size(267, 150);
+            this.grpGrabar.Size = new System.Drawing.Size(321, 150);
             this.grpGrabar.TabIndex = 3;
             this.grpGrabar.TabStop = false;
             this.grpGrabar.Text = ".";
+            // 
+            // lstDatos
+            // 
+            this.lstDatos.FormattingEnabled = true;
+            this.lstDatos.Location = new System.Drawing.Point(11, 29);
+            this.lstDatos.Name = "lstDatos";
+            this.lstDatos.Size = new System.Drawing.Size(291, 173);
+            this.lstDatos.TabIndex = 4;
+            // 
+            // grpListado
+            // 
+            this.grpListado.BackColor = System.Drawing.Color.LavenderBlush;
+            this.grpListado.Controls.Add(this.btnListar);
+            this.grpListado.Controls.Add(this.lstDatos);
+            this.grpListado.Location = new System.Drawing.Point(12, 168);
+            this.grpListado.Name = "grpListado";
+            this.grpListado.Size = new System.Drawing.Size(321, 254);
+            this.grpListado.TabIndex = 5;
+            this.grpListado.TabStop = false;
+            this.grpListado.Text = "Listado";
+            // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(240, 216);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 5;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // frmGrabardatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(294, 178);
+            this.ClientSize = new System.Drawing.Size(345, 461);
+            this.Controls.Add(this.grpListado);
             this.Controls.Add(this.grpGrabar);
             this.Name = "frmGrabardatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -88,6 +123,7 @@
             this.Load += new System.EventHandler(this.frmGrabardatos_Load);
             this.grpGrabar.ResumeLayout(false);
             this.grpGrabar.PerformLayout();
+            this.grpListado.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -98,6 +134,9 @@
         private System.Windows.Forms.Label lblGrabar;
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.GroupBox grpGrabar;
+        private System.Windows.Forms.ListBox lstDatos;
+        private System.Windows.Forms.GroupBox grpListado;
+        private System.Windows.Forms.Button btnListar;
     }
 }
 

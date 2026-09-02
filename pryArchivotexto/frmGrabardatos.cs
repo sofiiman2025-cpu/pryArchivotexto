@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,6 +30,11 @@ namespace pryArchivotexto
         {
             x.Grabar(txtGrabar.Text);
             MessageBox.Show("Datos grabados correctamente.");
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            x.Listar(lstDatos);
         }
     }
 }
